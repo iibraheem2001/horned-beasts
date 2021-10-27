@@ -1,15 +1,15 @@
 import React from 'react';
-import header from './header';
-import Main from './Main.js';
-import Footer from './Footer.js';
+import Header from './header';
+import Main from './main.js';
+import Footer from './footer.js';
 
 class App extends React.Component {
   render() {
     return(
       <div>
-        <header />
-        <main />
-        <footer />
+        <Header />
+        <Main />
+        <Footer />
       </div>
     )
   }
@@ -17,6 +17,3 @@ class App extends React.Component {
 
 
 export default App;
-export { header };
-export {Main};
-export {Footer};

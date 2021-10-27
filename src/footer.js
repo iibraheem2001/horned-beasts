@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class footer extends React.Component {
+class Footer extends React.Component {
     render() {
         return(
             <h1>Author: Ibraheem Ibraheem</h1>
@@ -10,4 +10,4 @@ class footer extends React.Component {
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default {footer};
+export default Footer;
