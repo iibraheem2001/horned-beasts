@@ -10,13 +10,16 @@ export default class Main extends Component {
     render() {
         return(
             <>
+            <div>
+                {this.props.beasts.map(beast => <HornedBeasts updateBeast={this.props.updateBeast} beast={beast}/>)}
+            </div>
             <h2>
                 Nice Horns!
             </h2>
             <Container id="mainContainer">
                 <Row xs={1} sm={2} md={3} lg={4}>
                     {description.map(beast => (
-                        <HornedBeasts beast={beast} />
+                        <HornedBeasts updateBeast={this.props.updateBeast} beast={beast} />
                     ))}
                 </Row>
             </Container>
