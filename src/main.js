@@ -1,17 +1,26 @@
-/* eslint-disable import/no-anonymous-default-export */
+import { Component } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import React from "react";
+import description from '../src/data.json'
 import HornedBeasts from './horned_beasts.js'
 
-
-class Main extends React.Component {
+export default class Main extends Component {
     render() {
         return(
-            <div>
-                <HornedBeasts title= "Goat" url="https://i.natgeofe.com/n/e9023026-7589-45ac-9e71-e510730329f3/Goat-portrait_3x4.jpg" description='this goat has a nice set of horns.' />
-                <HornedBeasts title= 'Bull' url='https://upload.travelawaits.com/ta/uploads/2021/04/df4e2437ce3677bac4544deed8fbedf4e24.jpg' description='this hairy bull has nice horns.' />
-            </div>
+            <>
+            <h2>
+                Nice Horns!
+            </h2>
+            <Container id="mainContainer">
+                <Row xs={1} sm={2} md={3} lg={4}>
+                    {description.map(beast => (
+                        <HornedBeasts beast={beast} />
+                    ))}
+                </Row>
+            </Container>
+            </>
         )
     }
 }
-
-export default Main;
