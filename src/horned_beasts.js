@@ -21,7 +21,7 @@ export default class HornedBeasts extends Component {
 
     render() {
         return (
-            <Card id='beastCard' >
+            <Card style={{width: '18rem'}} id='beastCard' >
                 <Card.Img onClick={this.handleClick} variant="bottom" src={this.props.beast.image_url} alt={this.props.beast.description} />
                 <Card.Body>
                     <Card.Title>{this.props.beast.Title}</Card.Title>

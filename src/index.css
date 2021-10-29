@@ -13,10 +13,7 @@ code {
 }
 
 #beastCard {
-width: 350pt;
-}
-
-#mainContainer {
-  padding: 5pt;
-
+/* width: 350pt; */
+  margin: 30px;
+  border: 5px solid black;
 }
