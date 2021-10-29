@@ -3,7 +3,6 @@ import Header from './header';
 import Main from './main.js';
 import Footer from './footer.js';
 import SelectedBeast from './SelectedBeasts.js';
-import beasts from './data.json'
 
 export default class App extends Component {
 
@@ -36,7 +35,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
-        <Main updateBeast={this.updateBeast} beasts={beasts}/>
+        <Main updateBeast={this.updateBeast}/>
         <Footer />
         <SelectedBeast featuredBeast={this.state.featuredBeast} closeModal={this.closeModal} show={this.state.show}/>
       </div>
